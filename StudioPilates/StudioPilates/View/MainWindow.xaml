@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudioPilates"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
+        Title="MainWindow" Height="386.158" Width="593.479">
+    <Grid Margin="0,45,2,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="97*"/>
+            <ColumnDefinition Width="335*"/>
+            <ColumnDefinition Width="150*"/>
+        </Grid.ColumnDefinitions>
+        <Menu x:Name="menu" HorizontalAlignment="Left" Height="20" Margin="0,-44,0,0" VerticalAlignment="Top" Width="582" Grid.ColumnSpan="6">
+            <MenuItem x:Name="menuCadProfessor" Header="Cadastrar Pofessor" Width="115"/>
+            <MenuItem x:Name="menuMatricula" Header="Matricula" Width="100"/>
+            <MenuItem x:Name="menuTurma" Header="Turma" Width="100"/>
+            <MenuItem x:Name="menuAgenda" Header="Agenda" Width="100"/>
+            <MenuItem x:Name="menuRelatorio" Header="Relatório" Width="100"/>
+            <MenuItem x:Name="menuSair" Header="Sair"/>
+        </Menu>
+        <Image x:Name="___StudioPilates_component_imagem_jpg" Grid.ColumnSpan="6" Source="/StudioPilates;component/Imagem/imagem.jpg" Stretch="Fill"/>
+
     </Grid>
 </Window>

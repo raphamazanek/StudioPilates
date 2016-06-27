@@ -24,5 +24,35 @@ namespace StudioPilates
         {
             InitializeComponent();
         }
+
+        private void menuCadastro_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void menuMatricula_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void menuInstrutor_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void menuSair_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void menuAgenda_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void menuRelatorio_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

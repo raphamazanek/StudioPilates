@@ -16,12 +16,15 @@
             <ColumnDefinition Width="150*"/>
         </Grid.ColumnDefinitions>
         <Menu x:Name="menu" HorizontalAlignment="Left" Height="20" Margin="0,-44,0,0" VerticalAlignment="Top" Width="582" Grid.ColumnSpan="6">
-            <MenuItem x:Name="menuCadProfessor" Header="Cadastrar Pofessor" Width="115"/>
-            <MenuItem x:Name="menuMatricula" Header="Matricula" Width="100"/>
-            <MenuItem x:Name="menuTurma" Header="Turma" Width="100"/>
-            <MenuItem x:Name="menuAgenda" Header="Agenda" Width="100"/>
-            <MenuItem x:Name="menuRelatorio" Header="Relatório" Width="100"/>
-            <MenuItem x:Name="menuSair" Header="Sair"/>
+            <MenuItem x:Name="menuCadastro" Header="Cadastros"  HorizontalAlignment="Left" Click="menuCadastro_Click">
+                <MenuItem x:Name="menuMatricula" Header="Matricula" HorizontalAlignment="Left" Click="menuMatricula_Click"/>
+                <MenuItem x:Name="menuInstrutor" Header="Instrutor" HorizontalAlignment="Left" Click="menuInstrutor_Click"/>
+                <Separator HorizontalAlignment="Left"/>
+                <MenuItem x:Name="menuSair" Header="Sair"  HorizontalAlignment="Left" Click="menuSair_Click"/>
+            </MenuItem>
+            <MenuItem x:Name="menuAgenda" Header="Agenda" HorizontalAlignment="Left" Click="menuAgenda_Click"/>
+            <MenuItem x:Name="menuRelatorio" Header="Relatório" HorizontalAlignment="Left" Click="menuRelatorio_Click"/>
+           
         </Menu>
         <Image x:Name="___StudioPilates_component_imagem_jpg" Grid.ColumnSpan="6" Source="/StudioPilates;component/Imagem/imagem.jpg" Stretch="Fill"/>
 

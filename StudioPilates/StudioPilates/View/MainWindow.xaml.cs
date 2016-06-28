@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using StudioPilates.View;
 
 namespace StudioPilates
 {
@@ -32,12 +33,17 @@ namespace StudioPilates
 
         private void menuMatricula_Click(object sender, RoutedEventArgs e)
         {
-           
+
+            frmCadAluno frmCadAluno = new frmCadAluno();
+            frmCadAluno.ShowDialog();
 
         }
 
         private void menuInstrutor_Click(object sender, RoutedEventArgs e)
         {
+
+            frmCadInstrutor frmCadInstrutor = new frmCadInstrutor();
+            frmCadInstrutor.ShowDialog();
 
         }
               

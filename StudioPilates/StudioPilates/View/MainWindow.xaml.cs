@@ -51,7 +51,7 @@ namespace StudioPilates
 
         }
 
-        private void fecharApp_Click(object sender, RoutedEventArgs e)
+        private void menuSair_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
@@ -63,5 +63,7 @@ namespace StudioPilates
                 e.Cancel = true;
             }
         }
+
+      
     }
 }

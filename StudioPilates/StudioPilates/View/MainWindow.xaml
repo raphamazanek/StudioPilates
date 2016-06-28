@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:StudioPilates"
         mc:Ignorable="d"
-        Title="MainWindow" Height="386.158" Width="593.479">
+        Title="MainWindow" Height="386.158" Width="593.479" Closing="Window_Closing">
     <Grid Margin="0,45,2,1">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -19,12 +19,11 @@
             <MenuItem x:Name="menuCadastro" Header="Cadastros"  HorizontalAlignment="Left" Click="menuCadastro_Click">
                 <MenuItem x:Name="menuMatricula" Header="Matricula" HorizontalAlignment="Left" Click="menuMatricula_Click"/>
                 <MenuItem x:Name="menuInstrutor" Header="Instrutor" HorizontalAlignment="Left" Click="menuInstrutor_Click"/>
-                <Separator HorizontalAlignment="Left"/>
-                <MenuItem x:Name="menuSair" Header="Sair"  HorizontalAlignment="Left" Click="menuSair_Click"/>
+               
             </MenuItem>
             <MenuItem x:Name="menuAgenda" Header="Agenda" HorizontalAlignment="Left" Click="menuAgenda_Click"/>
             <MenuItem x:Name="menuRelatorio" Header="Relatório" HorizontalAlignment="Left" Click="menuRelatorio_Click"/>
-           
+            <MenuItem x:Name="menuSair" Header="Sair" HorizontalAlignment="Left" Click="menuSair_Click"/>
         </Menu>
         <Image x:Name="___StudioPilates_component_imagem_jpg" Grid.ColumnSpan="6" Source="/StudioPilates;component/Imagem/imagem.jpg" Stretch="Fill"/>
 

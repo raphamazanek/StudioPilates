@@ -27,11 +27,12 @@ namespace StudioPilates
 
         private void menuCadastro_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
 
         private void menuMatricula_Click(object sender, RoutedEventArgs e)
         {
+           
 
         }
 
@@ -39,12 +40,7 @@ namespace StudioPilates
         {
 
         }
-
-        private void menuSair_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
+              
         private void menuAgenda_Click(object sender, RoutedEventArgs e)
         {
 
@@ -53,6 +49,19 @@ namespace StudioPilates
         private void menuRelatorio_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void fecharApp_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (MessageBox.Show("Sair do Sistema?", "Sair", MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

@@ -78,7 +78,7 @@ namespace StudioPilates
 
         private void consultarAgenda_Click(object sender, RoutedEventArgs e)
         {
-
-        }
+      
     }
+}
 }

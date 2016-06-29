@@ -70,6 +70,15 @@ namespace StudioPilates
             }
         }
 
-      
+        private void menuCriarAgenda_Click(object sender, RoutedEventArgs e)
+        {
+            frmMontagemAgenda frmMontagemAgenda = new frmMontagemAgenda();
+            frmMontagemAgenda.ShowDialog();
+        }
+
+        private void consultarAgenda_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

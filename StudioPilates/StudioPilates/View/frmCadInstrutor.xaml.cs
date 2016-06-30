@@ -24,5 +24,29 @@ namespace StudioPilates.View
         {
             InitializeComponent();
         }
+        private void btnCancelar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnRemover_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnAlterar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnGravar_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnBuscarCPFInstrutor_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

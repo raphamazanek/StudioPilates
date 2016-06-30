@@ -6,28 +6,36 @@
       xmlns:local="clr-namespace:StudioPilates.View"
       mc:Ignorable="d" 
      
-      Title="Cadastro Instrutor" Width="492" Height="356">
+      Title="Cadastro Instrutor" Width="475.589" Height="450.806">
 
     <Grid Background="White" Margin="0,0,1,8">
-        <Label x:Name="label" Content="NOME" HorizontalAlignment="Left" Margin="55,33,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="21,57,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5"/>
-        <Label x:Name="label_Copy" Content="SOBRENOME" HorizontalAlignment="Left" Margin="202,33,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Left" Height="23" Margin="178,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="label_Copy1" Content="CPF" HorizontalAlignment="Left" Margin="378,33,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_Copy1" HorizontalAlignment="Left" Height="23" Margin="340,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="label_Copy2" Content="NASC" HorizontalAlignment="Left" Margin="56,102,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label_Copy3" Content="CELULAR" HorizontalAlignment="Left" Margin="212,102,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_Copy3" HorizontalAlignment="Left" Height="23" Margin="178,126,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="label_Copy4" Content="TELEFONE" HorizontalAlignment="Left" Margin="352,101,0,0" VerticalAlignment="Top" Width="70"/>
-        <TextBox x:Name="textBox_Copy4" HorizontalAlignment="Left" Height="23" Margin="339,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label x:Name="label1" Content="Cadastro Instrutor" HorizontalAlignment="Left" Margin="159,4,0,0" VerticalAlignment="Top" Height="27" Width="180" FontWeight="Bold" FontSize="16"/>
-        <Label x:Name="label_Copy6" Content="ENDEREÇO" HorizontalAlignment="Left" Margin="23,232,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox_Copy6" HorizontalAlignment="Left" Height="57" Margin="96,215,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
-        <Label x:Name="label2" Content="E-MAIL" HorizontalAlignment="Left" Margin="25,178,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="24" Margin="85,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240"/>
-        <DatePicker HorizontalAlignment="Left" Margin="22,128,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="button" Content="SALVAR" HorizontalAlignment="Left" Margin="365,223,0,0" VerticalAlignment="Top" Width="75" Background="#FF2DA438"/>
-        <Button x:Name="button_Copy" Content="CANCELAR" HorizontalAlignment="Left" Margin="365,255,0,0" VerticalAlignment="Top" Width="75" Background="#FFC91F1F"/>
+        <Label x:Name="lblNome" Content="NOME" HorizontalAlignment="Left" Margin="55,106,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="23" Margin="21,130,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5"/>
+        <Label x:Name="lblSobrenome" Content="SOBRENOME" HorizontalAlignment="Left" Margin="202,106,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSobrenome" HorizontalAlignment="Left" Height="23" Margin="178,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblCPF" Content="CPF" HorizontalAlignment="Left" Margin="378,106,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCPF" HorizontalAlignment="Left" Height="23" Margin="340,131,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblNasc" Content="NASC" HorizontalAlignment="Left" Margin="56,175,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblCelular" Content="CELULAR" HorizontalAlignment="Left" Margin="212,175,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtCelular" HorizontalAlignment="Left" Height="23" Margin="178,199,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblTelefone" Content="TELEFONE" HorizontalAlignment="Left" Margin="352,174,0,0" VerticalAlignment="Top" Width="70"/>
+        <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="339,197,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblCadastroInstrutor" Content="Cadastro Instrutor" HorizontalAlignment="Left" Margin="159,4,0,0" VerticalAlignment="Top" Height="27" Width="180" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="lblEndereco" Content="ENDEREÇO" HorizontalAlignment="Left" Margin="23,305,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEndereco" HorizontalAlignment="Left" Height="57" Margin="96,288,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
+        <Label x:Name="lblEmail" Content="E-MAIL" HorizontalAlignment="Left" Margin="25,251,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="24" Margin="85,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240"/>
+        <DatePicker HorizontalAlignment="Left" Margin="22,201,0,0" VerticalAlignment="Top"/>
+
+        <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="16,357,0,0" VerticalAlignment="Top" Width="90" Height="28" IsEnabled="False" Click="btnCancelar_Click"/>
+        <Button x:Name="btnRemover" Content="Remover" HorizontalAlignment="Left" Margin="128,357,0,0" VerticalAlignment="Top" Width="90" Height="28" IsEnabled="False" Click="btnRemover_Click"/>
+        <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="245,357,0,0" VerticalAlignment="Top" Width="90" Height="28" IsEnabled="False" Click="btnAlterar_Click"/>
+        <Button x:Name="btnGravar" Content="Gravar" HorizontalAlignment="Left" Margin="365,357,0,0" VerticalAlignment="Top" Width="90" Height="28" Click="btnGravar_Click" Background="{x:Null}"/>
+        <TextBox x:Name="txtBuscarInstrutor" HorizontalAlignment="Left" Height="23" Margin="94,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223"/>
+        <Label x:Name="lblBuscarCPFInstrutor" Content="CPF" HorizontalAlignment="Left" Margin="36,39,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnBuscarCPFInstrutor" Content="Buscar" HorizontalAlignment="Left" Margin="358,41,0,0" VerticalAlignment="Top" Width="75" Click="btnBuscarCPFInstrutor_Click"/>
+        <Separator HorizontalAlignment="Left" Height="17" Margin="4,67,0,0" VerticalAlignment="Top" Width="467"/>
+
 
     </Grid>
 </Window>

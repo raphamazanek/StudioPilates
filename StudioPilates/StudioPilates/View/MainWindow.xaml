@@ -1,9 +1,9 @@
-﻿<Window x:Class="StudioPilates.MainWindow"
+﻿<Window x:Class="StudioPilates.View.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:StudioPilates"
+        xmlns:local="clr-namespace:StudioPilates.View"
         mc:Ignorable="d"
        
         Title="Studio Pilates" Height="386.158" Width="593.479" Closing="Window_Closing">

@@ -23,5 +23,59 @@ namespace StudioPilates.View
         {
             InitializeComponent();
         }
-}
+
+        private void menuCadastro_Click(object sender, RoutedEventArgs e)
+        {
+               
+        }
+
+        private void menuMatricula_Click(object sender, RoutedEventArgs e)
+        {
+            frmCadAluno frmCadAluno = new frmCadAluno();
+            frmCadAluno.ShowDialog();
+        }
+
+        private void menuInstrutor_Click(object sender, RoutedEventArgs e)
+        {
+            frmCadInstrutor frmCadInstrutor = new frmCadInstrutor();
+            frmCadInstrutor.ShowDialog();
+        }
+
+        private void menuAgenda_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void menuCriarAgenda_Click(object sender, RoutedEventArgs e)
+        {
+            frmMontagemAgenda frmMontagemAgenda = new frmMontagemAgenda();
+            frmMontagemAgenda.ShowDialog();
+        }
+
+        private void menuSair_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+
+        }
+
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            if (MessageBox.Show("Deseja sair?", "Saindo...",
+               MessageBoxButton.YesNo, MessageBoxImage.Question) ==
+               MessageBoxResult.No)
+            {
+                e.Cancel = true;
+            }
+        }
+
+        private void consultarAgenda_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void menuRelatorio_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+    }
 }

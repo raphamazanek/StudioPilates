@@ -10,6 +10,7 @@ namespace StudioPilates.DAL
 {
     class Context : DbContext
     {
+
         public DbSet<Aluno> Aluno { get; set; }
 
         public DbSet<Instrutor> Instrutor { get; set; }

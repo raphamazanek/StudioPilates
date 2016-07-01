@@ -26,13 +26,13 @@
             <TextBox x:Name="txtTelefone" HorizontalAlignment="Left" Height="23" Margin="319,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
             <TextBox x:Name="txtAvaliacaoFisica" HorizontalAlignment="Left" Height="57" Margin="8,171,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="430"/>
             <TextBox x:Name="txtEndereco" HorizontalAlignment="Left" Height="57" Margin="80,243,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="180"/>
-            <DatePicker HorizontalAlignment="Left" Margin="0,66,0,0" VerticalAlignment="Top"/>
+            <DatePicker x:Name="dtNasc" HorizontalAlignment="Left" Margin="0,66,0,0" VerticalAlignment="Top"/>
             <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="24" Margin="66,108,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="240"/>
 
             <Button x:Name="btnCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="12,316,0,0" VerticalAlignment="Top" Width="90" Height="28" IsEnabled="False" Click="btnCancelar_Click"/>
             <Button x:Name="btnRemover" Content="Remover" HorizontalAlignment="Left" Margin="124,316,0,0" VerticalAlignment="Top" Width="90" Height="28" IsEnabled="False" Click="btnRemover_Click"/>
             <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="241,316,0,0" VerticalAlignment="Top" Width="90" Height="28" IsEnabled="False" Click="btnAlterar_Click"/>
-            <Button x:Name="btnGravar" Content="Gravar" HorizontalAlignment="Left" Margin="361,316,0,0" VerticalAlignment="Top" Width="90" Height="28" Click="btnGravar_Click" Background="{x:Null}"/>
+            <Button x:Name="btnGravar" Content="Gravar" HorizontalAlignment="Left" Margin="361,316,0,0" VerticalAlignment="Top" Width="90" Height="28" Click="btnGravar_Click"/>
 
         </Grid>
         <TextBox x:Name="txtBuscarAluno" HorizontalAlignment="Left" Height="23" Margin="95,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223"/>

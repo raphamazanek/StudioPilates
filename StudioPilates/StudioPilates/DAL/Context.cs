@@ -14,5 +14,10 @@ namespace StudioPilates.DAL
         public DbSet<Aluno> Aluno { get; set; }
 
         public DbSet<Instrutor> Instrutor { get; set; }
+
+        public DbSet<Plano> Plano { get; set; }
+
+        public DbSet<Agenda> Agenda { get; set; }
+    
     }
 }

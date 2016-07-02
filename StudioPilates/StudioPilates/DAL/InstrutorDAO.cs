@@ -11,13 +11,20 @@ namespace StudioPilates.DAL
         private static Context ctx = new Context();
 
         //add novo Instrutor
-        public static bool AdicionarInstrutor(Instrutor a)
+        public static bool AdicionarInstrutor(Instrutor i)
         {
             try
             {
-                ctx.Instrutor.Add(a);
-                ctx.SaveChanges();
-                return true;
+                if (VerificaInstrutorPorCPF(i) == null) {
+                    ctx.Instrutor.Add(i);
+                    ctx.SaveChanges();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+                
             }
             catch (Exception)
             {
@@ -28,9 +35,9 @@ namespace StudioPilates.DAL
         }
 
         //verifica se Instrutor ja existe
-        public static Instrutor VerificaInstrutorPorCPF(Instrutor a)
+        public static Instrutor VerificaInstrutorPorCPF(Instrutor i)
         {
-            return ctx.Instrutor.FirstOrDefault(x => x.CPF.Equals(a.CPF));
+            return ctx.Instrutor.FirstOrDefault(x => x.CPF.Equals(i.CPF));
         }
 
         //busca lista de Instrutors
@@ -40,11 +47,11 @@ namespace StudioPilates.DAL
         }
 
         //remove cadastro do Instrutor
-        public static bool RemoverInstrutor(Instrutor a)
+        public static bool RemoverInstrutor(Instrutor i)
         {
             try
             {
-                ctx.Instrutor.Remove(a);
+                ctx.Instrutor.Remove(i);
                 ctx.SaveChanges();
                 return true;
             }
@@ -55,11 +62,11 @@ namespace StudioPilates.DAL
         }
 
         //altera os dados do Instrutor
-        public static bool AlterarInstrutor(Instrutor a)
+        public static bool AlterarInstrutor(Instrutor i)
         {
             try
             {
-                ctx.Entry(a).State = System.Data.Entity.EntityState.Modified;
+                ctx.Entry(i).State = System.Data.Entity.EntityState.Modified;
                 ctx.SaveChanges();
                 return true;
             }

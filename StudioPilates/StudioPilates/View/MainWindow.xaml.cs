@@ -77,5 +77,11 @@ namespace StudioPilates.View
         {
 
         }
+
+        private void MenuPlano_Click(object sender, RoutedEventArgs e)
+        {
+            frmPlano frmPlano = new frmPlano();
+            frmPlano.ShowDialog();
+        }
     }
 }

@@ -117,7 +117,6 @@ namespace StudioPilates.View
 
         private void btnGravar_Click(object sender, RoutedEventArgs e)
         {
-            frmCadAluno frm = new frmCadAluno();
             a = new Aluno();
             
             a.Nome = txtNome.Text;

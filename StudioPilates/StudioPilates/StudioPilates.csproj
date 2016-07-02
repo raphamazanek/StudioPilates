@@ -69,6 +69,7 @@
     <Compile Include="DAL\AlunoDAO.cs" />
     <Compile Include="DAL\Context.cs" />
     <Compile Include="DAL\InstrutorDAO.cs" />
+    <Compile Include="DAL\PlanoDAO.cs" />
     <Compile Include="DAL\Singleton.cs" />
     <Compile Include="Migrations\201607020222430_StudioDb.cs" />
     <Compile Include="Migrations\201607020222430_StudioDb.Designer.cs">

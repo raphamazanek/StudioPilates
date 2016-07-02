@@ -1,4 +1,6 @@
-﻿using System;
+﻿using StudioPilates.DAL;
+using StudioPilates.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +22,9 @@ namespace StudioPilates.View
     /// </summary>
     public partial class frmCadInstrutor : Window
     {
+
+        private Instrutor i = new Instrutor();
+
         public frmCadInstrutor()
         {
             InitializeComponent();
@@ -41,8 +46,26 @@ namespace StudioPilates.View
 
         private void btnGravar_Click(object sender, RoutedEventArgs e)
         {
+            i = new Instrutor();
 
-        }
+            i.Nome = txtNome.Text;
+            i.Sobrenome = txtSobrenome.Text;
+            i.CPF = txtCPF.Text;
+            i.Celula = txtCelular.Text;
+            i.Telefone = txtTelefone.Text;
+            i.Email = txtEmail.Text;
+            i.Endereco = txtEndereco.Text;
+
+            if (InstrutorDAO.AdicionarInstrutor(i))
+            {
+                MessageBox.Show("Gravado com sucesso!", "Cadastro de Instrutor",
+                MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else {
+                MessageBox.Show("Não foi possível gravar!", "Cadastro de Instrutor",
+                MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+    }
 
         private void btnBuscarCPFInstrutor_Click(object sender, RoutedEventArgs e)
         {

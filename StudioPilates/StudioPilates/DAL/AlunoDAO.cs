@@ -15,9 +15,18 @@ namespace StudioPilates.DAL
         {
             try
             {
-                ctx.Aluno.Add(a);
-                ctx.SaveChanges();
-                return true;
+                //Não esquecer de chamar a Validação.
+                if (VerificaAlunoPorCPF(a) == null)
+                {
+                    ctx.Aluno.Add(a);
+                    ctx.SaveChanges();
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+                
             }
             catch (Exception)
             {

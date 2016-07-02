@@ -95,6 +95,7 @@ namespace StudioPilates.View
 
         private void btnGravar_Click(object sender, RoutedEventArgs e)
         {
+            frmCadAluno frm = new frmCadAluno();
             a = new Aluno();
             
             a.Nome = txtNome.Text;
@@ -112,6 +113,7 @@ namespace StudioPilates.View
             {
                 MessageBox.Show("Gravado com sucesso!", "Cadastro de Aluno",
                 MessageBoxButton.OK, MessageBoxImage.Information);
+
             }
             else
             {
@@ -119,8 +121,15 @@ namespace StudioPilates.View
                 MessageBoxButton.OK, MessageBoxImage.Error);
             }
 
-            txtNome.Text = "";
-            txtNome.Focus();
+            txtNome.Clear();
+            txtSobrenme.Clear();
+            txtCPF.Clear();
+            
+            txtCeular.Clear();
+            txtTelefone.Clear();
+            txtEmail.Clear();
+            txtAvaliacaoFisica.Clear();
+            txtEndereco.Clear();
         }
 
         private void btnBuscarCPFAluno_Click(object sender, RoutedEventArgs e)

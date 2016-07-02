@@ -69,6 +69,11 @@
     <Compile Include="DAL\AlunoDAO.cs" />
     <Compile Include="DAL\Context.cs" />
     <Compile Include="DAL\InstrutorDAO.cs" />
+    <Compile Include="Migrations\201607020016533_StudioDb.cs" />
+    <Compile Include="Migrations\201607020016533_StudioDb.Designer.cs">
+      <DependentUpon>201607020016533_StudioDb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Aluno.cs" />
     <Compile Include="Model\Instrutor.cs" />
     <Compile Include="View\frmMontagemAgenda.xaml.cs">
@@ -118,6 +123,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\201607020016533_StudioDb.resx">
+      <DependentUpon>201607020016533_StudioDb.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -51,7 +51,7 @@ namespace StudioPilates.View
             i.Nome = txtNome.Text;
             i.Sobrenome = txtSobrenome.Text;
             i.CPF = txtCPF.Text;
-            i.Celula = txtCelular.Text;
+            i.Celular = txtCelular.Text;
             i.Telefone = txtTelefone.Text;
             i.Email = txtEmail.Text;
             i.Endereco = txtEndereco.Text;

@@ -82,7 +82,7 @@ namespace StudioPilates.View
                 a.CPF = txtCPF.Text;
                 a.Celular = txtCeular.Text;
                 a.Telefone = txtTelefone.Text;
-                a.Nasc = dtNasc.Text;
+                a.DtNasc = dtNasc.Text;
                 a.AvaliacaoFisica = txtAvaliacaoFisica.Text;
                 a.Endereco = txtEndereco.Text;
                 a.Email = txtEmail.Text;
@@ -123,7 +123,7 @@ namespace StudioPilates.View
             a.Nome = txtNome.Text;
             a.Sobrenome = txtSobrenme.Text;
             a.CPF = txtCPF.Text;
-            a.Nasc = dtNasc.Text;
+            a.DtNasc = dtNasc.Text;
             a.Celular = txtCeular.Text;
             a.Telefone = txtTelefone.Text;
             a.AvaliacaoFisica = txtAvaliacaoFisica.Text;
@@ -167,7 +167,7 @@ namespace StudioPilates.View
                     txtSobrenme.Text = a.Sobrenome;
                     txtCPF.Text = a.CPF;
                     txtCeular.Text = a.Celular;
-                    dtNasc.Text = a.Nasc;
+                    dtNasc.Text = a.DtNasc;
                     txtTelefone.Text = a.Telefone;
                     txtAvaliacaoFisica.Text = a.AvaliacaoFisica;
                     txtEndereco.Text = a.Endereco;

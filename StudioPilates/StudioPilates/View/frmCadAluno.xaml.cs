@@ -56,6 +56,17 @@ namespace StudioPilates.View
                 DesabilitarBotoes();
             }
 
+            txtBuscarAluno.Clear();
+            txtNome.Clear();
+            txtSobrenme.Clear();
+            dtNasc.Text = null;
+            txtCPF.Clear();
+            txtCeular.Clear();
+            txtTelefone.Clear();
+            txtEmail.Clear();
+            txtAvaliacaoFisica.Clear();
+            txtEndereco.Clear();
+
         }
 
         private void btnAlterar_Click(object sender, RoutedEventArgs e)
@@ -71,6 +82,7 @@ namespace StudioPilates.View
                 a.CPF = txtCPF.Text;
                 a.Celular = txtCeular.Text;
                 a.Telefone = txtTelefone.Text;
+                a.Nasc = dtNasc.Text;
                 a.AvaliacaoFisica = txtAvaliacaoFisica.Text;
                 a.Endereco = txtEndereco.Text;
                 a.Email = txtEmail.Text;
@@ -91,6 +103,16 @@ namespace StudioPilates.View
                 DesabilitarBotoes();
             }
 
+            txtBuscarAluno.Clear();
+            txtNome.Clear();
+            txtSobrenme.Clear();
+            txtCPF.Clear();
+            txtCeular.Clear();
+            dtNasc.Text = null;
+            txtTelefone.Clear();
+            txtEmail.Clear();
+            txtAvaliacaoFisica.Clear();
+            txtEndereco.Clear();
         }
 
         private void btnGravar_Click(object sender, RoutedEventArgs e)
@@ -124,7 +146,7 @@ namespace StudioPilates.View
             txtNome.Clear();
             txtSobrenme.Clear();
             txtCPF.Clear();
-            
+            dtNasc.Text = null;
             txtCeular.Clear();
             txtTelefone.Clear();
             txtEmail.Clear();
@@ -145,6 +167,7 @@ namespace StudioPilates.View
                     txtSobrenme.Text = a.Sobrenome;
                     txtCPF.Text = a.CPF;
                     txtCeular.Text = a.Celular;
+                    dtNasc.Text = a.Nasc;
                     txtTelefone.Text = a.Telefone;
                     txtAvaliacaoFisica.Text = a.AvaliacaoFisica;
                     txtEndereco.Text = a.Endereco;

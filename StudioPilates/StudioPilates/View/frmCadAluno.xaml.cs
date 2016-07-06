@@ -66,7 +66,7 @@ namespace StudioPilates.View
             txtEmail.Clear();
             txtAvaliacaoFisica.Clear();
             txtEndereco.Clear();
-
+            cmbPlano = null;
         }
 
         private void btnAlterar_Click(object sender, RoutedEventArgs e)
@@ -86,7 +86,7 @@ namespace StudioPilates.View
                 a.AvaliacaoFisica = txtAvaliacaoFisica.Text;
                 a.Endereco = txtEndereco.Text;
                 a.Email = txtEmail.Text;
-
+                a.Plano = (int)cmbPlano.SelectedValue;
 
                 if (AlunoDAO.AlterarAluno(a))
                 {
@@ -113,6 +113,7 @@ namespace StudioPilates.View
             txtEmail.Clear();
             txtAvaliacaoFisica.Clear();
             txtEndereco.Clear();
+            cmbPlano = null;
         }
 
         private void btnGravar_Click(object sender, RoutedEventArgs e)
@@ -128,7 +129,7 @@ namespace StudioPilates.View
             a.AvaliacaoFisica = txtAvaliacaoFisica.Text;
             a.Endereco = txtEndereco.Text;
             a.Email = txtEmail.Text;
-
+            a.Plano = (int)cmbPlano.SelectedValue;
 
             if (AlunoDAO.AdicionarAluno(a))
             {
@@ -151,6 +152,7 @@ namespace StudioPilates.View
             txtEmail.Clear();
             txtAvaliacaoFisica.Clear();
             txtEndereco.Clear();
+            cmbPlano.SelectedValue = null;
         }
 
         private void btnBuscarCPFAluno_Click(object sender, RoutedEventArgs e)
@@ -171,6 +173,7 @@ namespace StudioPilates.View
                     txtAvaliacaoFisica.Text = a.AvaliacaoFisica;
                     txtEndereco.Text = a.Endereco;
                     txtEmail.Text = a.Email;
+                    cmbPlano.SelectedValue = a.Plano;
                     HabilitarBotoes();
                 }
                 else
@@ -203,6 +206,12 @@ namespace StudioPilates.View
             btnCancelar.IsEnabled = false;
             btnGravar.IsEnabled = true;
            
+        }
+
+        private void cmbPlano_Loaded(object sender, RoutedEventArgs e)
+        {
+            var lista = PlanoDAO.ReturnLista();
+            cmbPlano.ItemsSource = lista;
         }
     }
 }

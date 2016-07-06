@@ -23,6 +23,7 @@ namespace StudioPilates.Model
         public string AvaliacaoFisica { get; set; }
         public string Endereco { get; set; }
         public string Email { get; set; }
+        public int Plano { get; set; }
 
     }
 }

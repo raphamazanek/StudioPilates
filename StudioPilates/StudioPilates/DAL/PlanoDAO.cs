@@ -36,7 +36,6 @@ namespace StudioPilates.DAL
             }
 
         }
-
         //verifica se o Plano ja existe
         public static Plano VerificaPlanoPorNome(Plano p)
         {

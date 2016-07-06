@@ -33,7 +33,7 @@
             </MenuItem>
             <MenuItem x:Name="menuAgenda" Header="Agenda" HorizontalAlignment="Left" Click="menuAgenda_Click">
                 <MenuItem x:Name="menuCriarAgenda" Header="Criar" HorizontalAlignment="Left" Click="menuCriarAgenda_Click"/>
-                <MenuItem x:Name="consultarAgenda" Header="Consultar" HorizontalAlignment="Left" Click="consultarAgenda_Click"/>
+                <MenuItem x:Name="alunoAgenda" Header="Agenda - Aluno" HorizontalAlignment="Left" Click="alunoAgenda_Click"/>
             </MenuItem>
             <MenuItem x:Name="menuRelatorio" Header="Relatório" HorizontalAlignment="Left" Click="menuRelatorio_Click"/>
             <MenuItem x:Name="menuSair" Header="Sair" HorizontalAlignment="Left" Click="menuSair_Click"/>

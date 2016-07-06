@@ -68,11 +68,6 @@ namespace StudioPilates.View
             }
         }
 
-        private void consultarAgenda_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void menuRelatorio_Click(object sender, RoutedEventArgs e)
         {
 
@@ -82,6 +77,12 @@ namespace StudioPilates.View
         {
             frmPlano frmPlano = new frmPlano();
             frmPlano.ShowDialog();
+        }
+
+        private void alunoAgenda_Click(object sender, RoutedEventArgs e)
+        {
+            frmAlunoAgenda frmAlunoAgenda = new frmAlunoAgenda();
+            frmAlunoAgenda.ShowDialog();
         }
     }
 }

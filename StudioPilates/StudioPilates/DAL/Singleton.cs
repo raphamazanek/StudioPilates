@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudioPilates.DAL
 {
+    //
     class Singleton
     {
         private static readonly Singleton instance = new Singleton();

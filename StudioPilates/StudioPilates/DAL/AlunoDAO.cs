@@ -10,12 +10,10 @@ namespace StudioPilates.DAL
     {
         private static Context ctx = new Context();
         
-        //add novo aluno
         public static bool AdicionarAluno(Aluno a)
         {
             try
             {
-                //Não esquecer de chamar a Validação.
                 if (VerificaAlunoPorCPF(a) == null)
                 {
                     ctx.Aluno.Add(a);
@@ -35,14 +33,12 @@ namespace StudioPilates.DAL
              }
 
         }
-
-        //verifica se aluno ja existe
+        
         public static Aluno VerificaAlunoPorCPF(Aluno a)
         {
             return ctx.Aluno.FirstOrDefault(x => x.CPF.Equals(a.CPF));
         }
 
-        //busca lista de alunos
         public static List<Aluno> ReturnLista()
         {
             return ctx.Aluno.ToList();

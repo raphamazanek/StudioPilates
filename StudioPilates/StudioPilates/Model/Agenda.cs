@@ -13,16 +13,13 @@ namespace StudioPilates.Model
     {
         public Agenda()
         {
-            Aluno = new List<Aluno>();
-            Instrutor = new Instrutor();
         }
 
         [Key]
         public int AgendaId { get; set; }
-        public DateTime DataInicio { get; set; }
-        public DateTime DataFinal { get; set; }
-        public List<Aluno> Aluno { get; set; }
-        public Instrutor Instrutor { get; set; }
-        public string Descricao { get; set; }
+        public string Aula { get; set; }
+        public string DataInicio { get; set; }
+        public string DataFinal { get; set; }
+        public int Instrutor { get; set; }
     }
 }

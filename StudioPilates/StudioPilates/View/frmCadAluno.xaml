@@ -33,6 +33,7 @@
             <Button x:Name="btnRemover" Content="Remover" HorizontalAlignment="Left" Margin="124,316,0,0" VerticalAlignment="Top" Width="90" Height="28" IsEnabled="False" Click="btnRemover_Click"/>
             <Button x:Name="btnAlterar" Content="Alterar" HorizontalAlignment="Left" Margin="241,316,0,0" VerticalAlignment="Top" Width="90" Height="28" IsEnabled="False" Click="btnAlterar_Click"/>
             <Button x:Name="btnGravar" Content="Gravar" HorizontalAlignment="Left" Margin="361,316,0,0" VerticalAlignment="Top" Width="90" Height="28" Click="btnGravar_Click"/>
+            <ComboBox x:Name="cmbPlano" HorizontalAlignment="Left" Margin="285,243,0,0" VerticalAlignment="Top" Width="153" SelectedValuePath="PlanoId" DisplayMemberPath="Nome" Loaded="cmbPlano_Loaded"/>
 
         </Grid>
         <TextBox x:Name="txtBuscarAluno" HorizontalAlignment="Left" Height="23" Margin="95,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223"/>

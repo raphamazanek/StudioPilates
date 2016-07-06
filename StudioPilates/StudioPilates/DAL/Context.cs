@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.Entity;
 using StudioPilates.Model;
+using System.Data.Entity;
 
 namespace StudioPilates.DAL
 {
@@ -18,6 +18,8 @@ namespace StudioPilates.DAL
         public DbSet<Plano> Plano { get; set; }
 
         public DbSet<Agenda> Agenda { get; set; }
-    
+
+        public DbSet<AlunoAgenda> AlunoAgenda { get; set; }
+
     }
 }
